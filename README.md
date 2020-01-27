@@ -1,5 +1,5 @@
-## CalorieCalculatorApp
+# CalorieCalculatorApp
 
-# Prerequisites
+## Prerequisites
 
 pip3 install Django (version 3.0.2)
