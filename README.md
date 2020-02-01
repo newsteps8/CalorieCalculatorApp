@@ -7,4 +7,8 @@ PyCharm (venv)
 
 
 ## Commits
-1- Only Index and About html files are added. The homepage of the site is opened.
+include account app,home app and calorie app. 
+account app: register,login and logout page.
+home app :homepage and links
+calorie app: calori calculation and respond to user page(detail) and links.
+calorie and meal app will be added.
