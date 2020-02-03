@@ -11,4 +11,4 @@ PyCharm (venv)
 ### account app: register,login and logout page.
 ### home app :homepage and links
 ### calorie app: calori calculation and respond to user page(detail) and links.
-### calorie and meal app will be added.
+### calorie and meal model will be added.
