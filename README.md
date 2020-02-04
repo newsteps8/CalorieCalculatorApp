@@ -7,8 +7,9 @@ PyCharm (venv)
 
 
 ## Commits
-### include account app,home app and calorie app. 
-### account app: register,login and logout page.
-### home app :homepage and links
-### calorie app: calori calculation and respond to user page(detail) and links.
-### calorie and meal model will be added.
+### User login or register
+### Firstly enter information to calorie calculation form
+### Then take an API adress and open food calorie calculation form and fill
+### You can see your daily calorie,food's calorie and remain calorie
+### You can control database records using admin panel
+### Finally, you logout or register again
