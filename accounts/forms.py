@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField(max_length=100, label='Kullanıcı Adı')
-    password = forms.CharField(max_length=100, label='Parola', widget=forms.PasswordInput)
+    username = forms.CharField(max_length=100, label='User Name')
+    password = forms.CharField(max_length=100, label='Password', widget=forms.PasswordInput)
 
     def clean(self):
         username = self.cleaned_data.get('username')
@@ -13,14 +13,14 @@ class LoginForm(forms.Form):
         if username and password:
             user = authenticate(username=username, password=password)
             if not user:
-                raise forms.ValidationError("Kullanıcı adını veya şifreyi yanlış girdiniz!")
+                raise forms.ValidationError("You entered the username or password incorrectly!")
         return super(LoginForm, self).clean()
 
 
 class RegisterForm(forms.ModelForm):
-    username = forms.CharField(max_length=100, label='Kullanıcı Adı')
-    password1 = forms.CharField(max_length=100, label='Parola', widget=forms.PasswordInput)
-    password2 = forms.CharField(max_length=100, label='Parola Doğrulama', widget=forms.PasswordInput)
+    username = forms.CharField(max_length=100, label='User Name')
+    password1 = forms.CharField(max_length=100, label='Password', widget=forms.PasswordInput)
+    password2 = forms.CharField(max_length=100, label='Password Verification', widget=forms.PasswordInput)
 
     class Meta:
         model = User
@@ -34,5 +34,5 @@ class RegisterForm(forms.ModelForm):
         password1 = self.cleaned_data.get("password1")
         password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
-            raise forms.ValidationError("Şifreler eşleşmiyor!")
+            raise forms.ValidationError("Passwords do not match!")
         return password2
