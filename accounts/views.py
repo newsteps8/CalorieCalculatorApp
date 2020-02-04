@@ -13,7 +13,7 @@ def login_view(request):
 
         return redirect('home')
 
-    return render(request, "accounts/form.html", {"form": form, 'title': 'Giriş Yap'})
+    return render(request, "accounts/form.html", {"form": form, 'title': 'Login'})
 
 
 def register_view(request):
@@ -28,7 +28,7 @@ def register_view(request):
         login(request, new_user)
         return redirect('home')
 
-    return render(request, "accounts/form.html", {"form": form, 'title': 'Üye Ol'})
+    return render(request, "accounts/form.html", {"form": form, 'title': 'Sign Up'})
 
 
 def logout_view(request):
