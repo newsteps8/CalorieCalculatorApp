@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3><a href="{{ calorie.get_absolute_url }}"></a> <small>{{ calorie.publishing_date }}</small></h3>
+                        <h4 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Hi, {{ request.user.username }}</h4>
+                        <p>Your Daily Calorie is: {{ calorie.calc|safe|linebreaks }} kcal/daily</p>
+                        <p>
+                            <a href="{% url 'calorie:create' %}" class="btn btn-primary" role="button">refill</a>
+                        </p>
+                        <p>{{ request.user.username }}, there are things you should know about this.</p>
+                        <h4 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">What is your daily calorie needs?</h4>
+
+                           <p> It consists of three main components: "basal metabolism", "exercise" and "energy in diet".
+                            The biggest determinant among them is basal metabolic rate.
+                            BMH shows the amount of energy consumed while resting or sleeping,
+                            that is, when no activity is shown, and constitutes 60 to 80 percent of the daily
+                            calories consumed.
+                            Physical activity is also one of the important factors in energy consumption, that is,
+                            weight loss or gain. In the event that the physical activity is increased, the rate of metabolism,
+                            and therefore the daily calorie requirement, is increased.
+                        </p>
+                        <h4 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">How many calories should I take per day?</h4>
+
+                           <p> The amount to be taken daily varies from person to person.
+                               The calculator uses the Harris-Benedict principle to detect calories expended in 1 day.
+                               The most important factors in this principle are the amount of nutrients taken in daily activities,
+                               in addition to the basal metabolic rate calculated based on the person's weight, height and age.
+                           </p>
+                               <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">The formula used to find the basal metabolic rate is given below.<p>
+
+                               <p>In women: 655 + 9.6 X (weight in kg) + 1.8 X (height in cm) - 4.7 X (age)</p>
+
+                               <p>In men: 66 + 13.7 X (weight in kg) + 5 X (height in cm) - 6.8 X (age)</p>
+                        </p>
+                    </div>
+                </div>
+
+
+ {% endblock %}
+
+

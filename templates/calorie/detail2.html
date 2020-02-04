@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;"><a href="{{ meal.get_absolute_url }}"></a> <small>{{ meal.publishing_date }}</small></h3>
+                        <h4 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Hi, {{ request.user.username }}</h4>
+                        <p>Your daily food calorie : {{ calorie.calc|safe|linebreaks }} kcal/daily</p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">The food you want to eat : {{ meal.Food|safe|linebreaks }} </p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;" >Amount of the food you want to eat: {{ meal.Amount|safe|linebreaks }} </p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Calorie of the food you want to eat: {{ meal.new_Cal|safe|linebreaks }} kcal </p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Your daily remain food calorie: {{ meal.remain_Cal|safe|linebreaks }} </p>
+                        <p>
+                            <a href="{% url 'calorie:meal' %}" class="btn btn-primary" role="button">refill</a>
+                        </p>
+
+
+                        </p>
+                    </div>
+                </div>
+
+
+ {% endblock %}
+
+
