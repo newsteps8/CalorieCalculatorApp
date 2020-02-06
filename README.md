@@ -15,6 +15,6 @@ PyCharm (venv)
 ### Finally, you logout or register again
 
 
-![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/img.png)
+![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/Screenshot from 2020-02-06 12-54-50.jpg)
 
-![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/img.png)
+![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/Screenshot from 2020-02-06 12-55-21.jpg)
