@@ -13,3 +13,8 @@ PyCharm (venv)
 ### You can see your daily calorie,food's calorie and remain calorie
 ### You can control database records using admin panel
 ### Finally, you logout or register again
+
+
+![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/img.png)
+
+![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/img.png)
