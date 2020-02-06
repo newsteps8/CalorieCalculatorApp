@@ -14,10 +14,7 @@ PyCharm (venv)
 ### You can control database records using admin panel
 ### Finally, you logout or register again
 
-![alt text](https://github.com/newsteps8/MovieBox/blob/master/Screenshot from 2020-02-06 12-54-50.jpg))
+![alt text](https://github.com/newsteps8/MovieBox/blob/master/Screenshot from 2020-02-06 12-54-50.jpg)
 
 ![alt text](https://github.com/newsteps8/MovieBox/blob/master/Screenshot from 2020-02-06 12-55-21.jpg)
 
-![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/Screenshot from 2020-02-06 12-54-50.jpg)
-
-![alt text](https://raw.githubusercontent.com/newsteps8/CalorieCalculatorApp/branch/path/to/Screenshot from 2020-02-06 12-55-21.jpg)
