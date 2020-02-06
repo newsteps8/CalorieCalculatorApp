@@ -14,7 +14,7 @@
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">The food you want to eat : {{ meal.Food|safe|linebreaks }} </p>
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;" >Amount of the food you want to eat: {{ meal.Amount|safe|linebreaks }} </p>
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Calorie of the food you want to eat: {{ meal.new_Cal|safe|linebreaks }} kcal </p>
-                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Your daily remain food calorie: {{ meal.remain_Cal|safe|linebreaks }} </p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Your daily remain food calorie: {{ meal.remain_Cal|safe|linebreaks }} kcal </p>
                         <p>
                             <a href="{% url 'calorie:meal' %}" class="btn btn-primary" role="button">refill</a>
                         </p>
