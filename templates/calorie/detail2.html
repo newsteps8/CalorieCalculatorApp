@@ -12,7 +12,7 @@
                         <h4 style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Hi, {{ request.user.username }}</h4>
                         <p>Your daily food calorie : {{ calorie.calc|safe|linebreaks }} kcal/daily</p>
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">The food you want to eat : {{ meal.Food|safe|linebreaks }} </p>
-                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;" >Amount of the food you want to eat: {{ meal.Amount|safe|linebreaks }} </p>
+                        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;" >Amount of the food you want to eat(in 100 gr or 100 ml): {{ meal.Amount|safe|linebreaks }} </p>
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Calorie of the food you want to eat: {{ meal.new_Cal|safe|linebreaks }} kcal </p>
                         <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">Your daily remain food calorie: {{ meal.remain_Cal|safe|linebreaks }} kcal </p>
                         <p>
